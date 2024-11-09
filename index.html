@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lateef Adeyekun">
+        <meta name="description" content="fakebook">
+        <meta name="keywords" content="Hotel, Prairie, Resorts, Five stars, Pool">
+        <title>Fakebook</title>
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex flex-between">
+                <div class="logo grid grid-center">
+                    <a href="#">
+                        <img src="./assets/img/fakebook.png">
+                    </a>
+                </div>
+                <nav class="grid grid-center">
+                    <ul class="flex gap-30">
+                        <li>
+                            <a href="#">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">My ads</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="profile grid grid-center">
+                    <img src="./assets/img/profile.jpg">
+                </div>
+            </div>
+        </header>
+        <div class="dialog-overlay">
+            <div class="dialog-box grid gap-10">
+                <div class="flex flex-between">
+                    <h2>Profile</h2>    
+                    <span class="close-btn">&times;</span>
+                </div>
+                <div class="details flex gap-20">
+                    <div class="grid grid-center">
+                        <img src="./assets/img/profile.jpg">
+                    </div>
+                    <p class="userName"></p>
+                    <p class="name"></p>
+                    <p class="email"></p>
+                    <p class="pages"></p>
+                    <p class="groups"></p>
+                    <p class="can-monetize"></p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container grid grid-center gap-30">
+                <div class="post-container">
+                    <form class="post-form">
+                        <textarea 
+                            placeholder="What's new?" 
+                            class="post-text"
+                        ></textarea>
+                        <div class="post-controls flex flex-between">
+                            <div>
+                                <i class="fas fa-image upload-icon"></i>
+                                <input 
+                                    type="file" 
+                                    class="off file-upload" 
+                                    accept="image/*"
+                                    id="file-upload"
+                                >
+                                <span class="image-name"></span>
+                            </div>
+                            <div class="post-button">Post</div>
+                        </div>
+                    </form>
+                </div>  
+                <div class="posts grid grid-center gap-20">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
