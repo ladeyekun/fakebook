@@ -194,7 +194,7 @@ header {
 
 
 .post-container {
-    margin: 30px auto;
+    margin: 60px auto 30px auto;
     width: var(--app-post-width); 
     padding: 15px;
     background-color: var(--app-post-container-background-color); 
